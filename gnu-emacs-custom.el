@@ -45,9 +45,9 @@
 ;; desktop mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;c:/GreenProgramme/swiss_tools/emacs-lib
-(setenv "HOME" "c:/git-dev/emacs-lib")
-(setq desktop-path '("c:/git-dev/emacs-lib/.emacs.d/"))
-(setq desktop-dirname "c:/git-dev/emacs-lib/.emacs.d/")
+(setenv "HOME" "c:/GreenProgramme/swiss_tools/emacs-lib")
+(setq desktop-path '("c:/GreenProgramme/swiss_tools/emacs-lib/.emacs.d/"))
+(setq desktop-dirname "c:/GreenProgramme/swiss_tools/emacs-lib/.emacs.d/")
 (setq desktop-base-file-name "emacs-desktop")
 (require 'desktop-menu)
 (desktop-save-mode 1) ;; save session for reopen ;; disable it due to windows crash bug
@@ -68,8 +68,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(setq bookmark-default-file  "bookmark.txt")
 (setq bookmark-save-flag 1)			;; save bookmark if changed
 (setq bookmark-sort-flag nil)
 (display-time) ;;show time
