@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("gnu-emacs-custom.el"
+ (filename . "c:/git-dev/emacs-lib/gnu-emacs-custom.el")
+ (front-context-string . "\n;;;;;;;;;;;;;;;")
+ (rear-context-string . "\n;; desktop mode")
+ (position . 2270))
+)
