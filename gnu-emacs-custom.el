@@ -26,10 +26,6 @@
 ;;      C:\GreenProgramme\emacs-24.4\bin\emacsclientw -s C:\GreenProgramme\swiss_tools\emacs-lib\.emacs.d\server\server -n -a C:\GreenProgramme\emacs-24.4\bin\runemacs  %1
 ;;   2. in windows, right mause --> open with --> choose the C:\GreenProgramme\openWithEmacsClient.bat
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-
-
 (setq debug-on-error nil) ;; enable a backtrace when a problem occurs.
 (setq user-full-name "hongqing")
 (setq user-mail-address "hongqing.hu@gmail.com")
@@ -44,13 +40,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; desktop mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;c:/GreenProgramme/swiss_tools/emacs-lib
-(setenv "HOME" "c:/git-dev/emacs-lib")
-(setq desktop-path '("c:/git-dev/emacs-lib/.emacs.d/"))
-(setq desktop-dirname "c:/git-dev/emacs-lib/.emacs.d/")
-(setq desktop-base-file-name "emacs-desktop")
 (require 'desktop-menu)
-(desktop-save-mode 1) ;; save session for reopen ;; disable it due to windows crash bug
+(desktop-save-mode 1)
+;; save session for reopen ;; disable it due to windows crash bug
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; use setting through setting value of built-in variables
@@ -69,7 +61,7 @@
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq bookmark-default-file  "bookmark.txt")
+
 (setq bookmark-save-flag 1)			;; save bookmark if changed
 (setq bookmark-sort-flag nil)
 (display-time) ;;show time
