@@ -12,9 +12,7 @@
 ;;   2. find the path of custumation. exmaple: c:/GreenProgramme/swiss_tools/emacs-lib
 ;;
 ;;   3.	add the following line into ".emacs" to load the custumation library
-;; (setenv "HOME" "c:/GreenProgramme/swiss_tools/emacs-lib")		;; new Home directoy for emacs
-;; (setq hongqing-emacs-root "c:/GreenProgramme/swiss_tools/emacs-lib")	;; move it to .emacs
-;; (add-to-list 'load-path hongqing-emacs-root)			;; move it to .emacs
+;; (add-to-list 'load-path "c:/GreenProgramme/swiss_tools/emacs-lib")
 ;; (load-library "gnu-emacs-custom")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -192,6 +190,20 @@
    "cmd"
    (concat " /k ""cd " (convert-standard-filename (file-name-directory buffer-file-name)) """" )))
 (global-set-key (kbd "<f11>")  'open-cmd-on-current-file-path)
+
+;; open console: mac version
+(defun mac-open-console ()
+    "open console in current path"
+  (interactive)
+  (shell-command (concat "open -a Terminal " (file-name-directory buffer-file-name))))
+
+
+(defun mac-open-finder ()
+    "open console in current path"
+  (interactive)
+  (shell-command (concat "open " (file-name-directory buffer-file-name))))
+
+
 
 
 (defun visit-tags-table-gaps ()
