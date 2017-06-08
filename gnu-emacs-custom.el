@@ -212,11 +212,6 @@
   (visit-tags-table  "c:/dev/ADTF_trunk/Swcs/EmGap/Test/SwcTests/TAGS")
   )
 
-
-
-
-
-
 (defun dos-eol-hide ()
   "Do not show ^M in files containing mixed UNIX and DOS line endings."
   (interactive)
@@ -228,9 +223,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;  for python
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'python-django) ; m-x python-django-open-project
-(add-hook 'python-mode-hook
-      (lambda ()
-        (setq indent-tabs-mode t)
-        (setq tab-width 4)
-        (setq python-indent 4)))
+(setq indent-tabs-mode nil)
